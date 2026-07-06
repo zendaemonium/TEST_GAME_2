@@ -3,6 +3,7 @@ xsp=0;
 ysp=0;
 inControl=true
 stunDuration=60
+dir=1
 
 //states
 

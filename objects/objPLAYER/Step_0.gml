@@ -43,3 +43,8 @@ switch(state){
 		
 	break;
 }
+
+if xsp != 0 {
+	dir=sign(xsp)
+	image_xscale = dir
+	}
