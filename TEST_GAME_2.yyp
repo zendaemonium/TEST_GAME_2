@@ -50,6 +50,7 @@
     {"id":{"name":"objPLAYER","path":"objects/objPLAYER/objPLAYER.yy",},},
     {"id":{"name":"objSOLID","path":"objects/objSOLID/objSOLID.yy",},},
     {"id":{"name":"objSPIKE","path":"objects/objSPIKE/objSPIKE.yy",},},
+    {"id":{"name":"objTriggerText","path":"objects/objTriggerText/objTriggerText.yy",},},
     {"id":{"name":"RoomBOOT","path":"rooms/RoomBOOT/RoomBOOT.yy",},},
     {"id":{"name":"RoomSTART","path":"rooms/RoomSTART/RoomSTART.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
