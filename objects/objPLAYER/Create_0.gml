@@ -4,7 +4,7 @@ ysp=0;
 inControl=true
 stunDuration=60
 
-
+//states
 
 enum Player_State{
 	STATEFREE,

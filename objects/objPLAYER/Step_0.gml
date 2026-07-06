@@ -1,11 +1,11 @@
-ysp+=0.1
+ysp+=0.1 //gravity
 
 switch(state){
 	case Player_State.STATEFREE:
 	
 	xsp=0
 	
-		if keyboard_check(vk_left)
+		if keyboard_check(vk_left) //player controls
 		{
 			xsp=-3
 		}
@@ -24,6 +24,7 @@ switch(state){
 			}
 			}
 
+//move player
 		move_and_collide(xsp, ysp, objSOLID)
 	
 	break;
