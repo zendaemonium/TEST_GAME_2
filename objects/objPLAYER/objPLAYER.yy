@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprTamzi",
-    "path":"sprites/sprTamzi/sprTamzi.yy",
+    "name":"sprPlayer",
+    "path":"sprites/sprPlayer/sprPlayer.yy",
   },
   "spriteMaskId":null,
   "visible":true,
