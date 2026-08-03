@@ -19,6 +19,7 @@ enum Player_State{
 }
 
 state=Player_State.STATEFREE;
+instance_create_layer(0, 0,layer, objHitboxCrook);
 
 //this function is used to transition to a new state :D
 

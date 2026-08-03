@@ -1,0 +1,1 @@
+playerdirection = sign(objPLAYER.x-x)

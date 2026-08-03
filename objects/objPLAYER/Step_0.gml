@@ -15,7 +15,7 @@ switch(state){
 			xsp=+3.6
 		}
 
-		if place_meeting(x, y+1, objSOLID)
+		if place_meeting(x, y+1, objSOLID) //check if on ground, set ysp to 0
 		{
 			ysp=0
 			if keyboard_check(vk_up)
@@ -40,6 +40,11 @@ switch(state){
 		}
 		
 		move_and_collide(xsp, ysp, objSOLID)
+		if place_meeting(x, y+1, objSOLID)
+		{
+			ysp=0
+			xsp=0
+		}
 		
 	break;
 }

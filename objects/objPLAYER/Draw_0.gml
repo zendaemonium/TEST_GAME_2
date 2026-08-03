@@ -1,10 +1,9 @@
+var _color = c_white
+
 if state == Player_State.STATEHURT{
-	draw_set_colour(c_red)
+	_color = c_red
 }
 
+draw_sprite_ext(sprite_index, image_index, x, y, dir, 1, 0, _color, image_alpha);
 
-
-draw_self();
-
-
-draw_set_colour(c_white); //default
+draw_set_color(c_white); //default
