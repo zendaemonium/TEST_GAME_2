@@ -4,6 +4,9 @@ ysp=0;
 inControl=true
 stunDuration=60
 dir=1
+maxspeed=6
+jumpspeed=-6
+grav=0.2
 
 //states
 

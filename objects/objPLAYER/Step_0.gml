@@ -1,4 +1,4 @@
-ysp+=0.1 //gravity
+ysp+=grav //gravity
 
 switch(state){
 	case Player_State.STATEFREE:
@@ -7,12 +7,12 @@ switch(state){
 	
 		if keyboard_check(vk_left) //player controls
 		{
-			xsp=-3
+			xsp=-maxspeed
 		}
 
 		if keyboard_check(vk_right)
 		{
-			xsp=+3.6
+			xsp=+maxspeed
 		}
 
 		if place_meeting(x, y+1, objSOLID) //check if on ground, set ysp to 0
@@ -20,7 +20,7 @@ switch(state){
 			ysp=0
 			if keyboard_check(vk_up)
 			{
-				ysp=-3
+				ysp=jumpspeed
 			}
 			}
 

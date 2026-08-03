@@ -205,7 +205,11 @@
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"sprSPIKE","path":"sprites/sprSPIKE/sprSPIKE.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"sprTrigger","path":"sprites/sprTrigger/sprTrigger.yy",},},
+=======
+    {"id":{"name":"sprTamzi","path":"sprites/sprTamzi/sprTamzi.yy",},},
+>>>>>>> Stashed changes
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
