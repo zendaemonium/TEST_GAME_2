@@ -52,4 +52,14 @@ switch(state){
 if xsp != 0 {
 	dir=sign(xsp)
 	image_xscale = dir
-	}
+}
+
+if bbox_top > room_height {
+	//wait a second here
+	x = currentGrace.x
+	y = currentGrace.bbox_bottom
+	ysp=0
+	ysp=0
+}
+	
+	

@@ -1,4 +1,6 @@
 
+var _x = camera_get_view_x(view_camera[0]);
+var _y = camera_get_view_y(view_camera[0]);
 
 var _guiWidth = display_get_gui_width();
 var _guiHeight = display_get_gui_height();
@@ -10,10 +12,10 @@ var _boxHeight = 100; //150px tall textbox
 
 draw_set_colour(c_gray);
 
-draw_rectangle(_boxPadding,	//top left x
-				_boxPadding, //top left y
-				_guiWidth-_boxPadding, //bottom right x
-				_boxPadding+_boxHeight, //bottom right y
+draw_rectangle(_x + _boxPadding,	//top left x
+				_y+ _boxPadding, //top left y
+				_x + _guiWidth-_boxPadding, //bottom right x
+				_y + _boxPadding+_boxHeight, //bottom right y
 				0)
 
 draw_set_colour(c_white);
@@ -24,8 +26,8 @@ draw_set_colour(c_white);
 var _textPadding = 10;	//text is 10px from box edge
 var _textWidth = _guiWidth -  (_boxPadding + _textPadding); //width of text line
 
-var _textX = _boxPadding + _textPadding;	//top left x of text
-var _textY = _boxPadding + _textPadding;	//top left y of text
+var _textX = _x+ _boxPadding + _textPadding;	//top left x of text
+var _textY = _y+ _boxPadding + _textPadding;	//top left y of text
 
 
 draw_set_font(fontArial12);

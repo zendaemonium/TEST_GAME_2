@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrToDoList",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrToDoList",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Objects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

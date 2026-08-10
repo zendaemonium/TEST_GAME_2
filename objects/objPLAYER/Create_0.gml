@@ -7,6 +7,7 @@ dir=1
 maxspeed=6
 jumpspeed=-6
 grav=0.2
+currentGrace=noone
 
 //states
 
