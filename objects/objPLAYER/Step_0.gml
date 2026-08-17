@@ -1,3 +1,6 @@
+mask_index = defaultMask;
+
+
 ysp+=grav; //gravity
 
 switch(state){
@@ -22,7 +25,15 @@ switch(state){
 			{
 				ysp=jumpspeed;
 			}
-			}
+		}
+		
+		//animation
+		if abs(xsp)>0{
+		sprite_index = sprTamziPlaceWalk
+		}
+		else if xsp==0{
+		sprite_index = sprTamziPlaceIdle
+		}
 
 //move player
 		move_and_collide(xsp, ysp, objSOLID)

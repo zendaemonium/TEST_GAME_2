@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprTamzi",
-    "path":"sprites/sprTamzi/sprTamzi.yy",
+    "name":"sprTamziPlaceIdle",
+    "path":"sprites/sprTamziPlaceIdle/sprTamziPlaceIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

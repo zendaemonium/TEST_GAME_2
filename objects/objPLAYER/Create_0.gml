@@ -9,6 +9,7 @@ jumpspeed=-6
 grav=0.2
 currentGrace=noone
 
+defaultMask = mask_index;
 //states
 
 enum Player_State{
