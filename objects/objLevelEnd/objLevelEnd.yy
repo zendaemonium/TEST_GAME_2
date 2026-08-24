@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objWalker",
+  "%Name":"objLevelEnd",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"objPLAYER","path":"objects/objPLAYER/objPLAYER.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objWalker",
+  "name":"objLevelEnd",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"objEnemyParent",
-    "path":"objects/objEnemyParent/objEnemyParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprWalkerPlace",
-    "path":"sprites/sprWalkerPlace/sprWalkerPlace.yy",
+    "name":"sprEndLevelSignPlace",
+    "path":"sprites/sprEndLevelSignPlace/sprEndLevelSignPlace.yy",
   },
   "spriteMaskId":null,
   "visible":true,

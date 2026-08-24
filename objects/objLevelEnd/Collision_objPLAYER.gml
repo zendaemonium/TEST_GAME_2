@@ -1,0 +1,1 @@
+other.state=Player_State.STATELEAVE

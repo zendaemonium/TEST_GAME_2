@@ -9,12 +9,13 @@ if !aggro{
 
 //walking behavior
 if aggro{
-	xsp = playerdirection
+	xsp = playerdirection * 2.5
 }
 
 if place_meeting(x, y+1, objSOLID) //check if on ground, set ysp to 0
-		{
-			ysp=0
-		}
-		image_xscale = playerdirection
-		move_and_collide(xsp, ysp, objSOLID)
+{
+	ysp=0
+}
+
+image_xscale = playerdirection
+move_and_collide(xsp, ysp, objSOLID)

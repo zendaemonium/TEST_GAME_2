@@ -58,6 +58,26 @@ switch(state){
 		}
 		
 	break;
+	
+	case Player_State.STATELEAVE:
+	
+		var _direction = sign(objLevelEndPathfindLocation.x - x)
+		xsp = _direction * maxspeed
+		
+		move_and_collide(xsp, ysp, objSOLID)
+	
+		if place_meeting(x, y+1, objSOLID)
+		{
+			ysp=0
+		}
+		
+		if distance_to_object(objLevelEndPathfindLocation) < 20
+		{
+			room_goto_next()
+		}
+		
+		
+	break;
 }
 
 if xsp != 0 {

@@ -20,6 +20,7 @@ enum Player_State{
 	STATECUTSCENE,
 	STATECLIMB,
 	STATEDANCE,
+	STATELEAVE,
 
 }
 
