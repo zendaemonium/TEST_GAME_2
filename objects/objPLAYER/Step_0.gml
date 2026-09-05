@@ -29,10 +29,12 @@ switch(state){
 		
 		//animation
 		if abs(xsp)>0{
-		sprite_index = sprTamziPlaceWalk
+		//sprite_index = sprTamziPlaceWalk
+		//sprite needs to be changed based on character
 		}
 		else if xsp==0{
-		sprite_index = sprTamziPlaceIdle
+		//sprite_index = sprTamziPlaceIdle
+		//sprite needs to be changed based on character
 		}
 
 //move player
@@ -74,6 +76,20 @@ switch(state){
 		if distance_to_object(objLevelEndPathfindLocation) < 20
 		{
 			room_goto_next()
+		}
+		
+		
+	break;
+	
+	case Player_State.STATESELECT:
+		
+		xsp=0
+		
+		move_and_collide(xsp, ysp, objSOLID)
+	
+		if place_meeting(x, y+1, objSOLID)
+		{
+			ysp=0
 		}
 		
 		

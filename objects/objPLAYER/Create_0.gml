@@ -5,9 +5,10 @@ inControl=true
 stunDuration=60
 dir=1
 maxspeed=6
-jumpspeed=-6
+jumpspeed=-7
 grav=0.2
 currentGrace=noone
+characterindex = 0
 
 defaultMask = mask_index;
 //states
@@ -21,6 +22,7 @@ enum Player_State{
 	STATECLIMB,
 	STATEDANCE,
 	STATELEAVE,
+	STATESELECT,
 
 }
 
@@ -49,4 +51,19 @@ function stateTransition(_stateTo){
 	
 state=_stateTo
 	return	1;
+}
+
+function characterTransition(_characterTo){
+	if characterindex = 0 {
+		sprite_index = sprTamziPlaceIdle
+	}
+	else if characterindex = 1 {
+		sprite_index = sprSekhetPlace
+	}
+	else if characterindex = 2 {
+		sprite_index = sprDayanPlace
+	}
+	else if characterindex = 3 {
+		sprite_index = sprMallaidhPlace
+	}
 }

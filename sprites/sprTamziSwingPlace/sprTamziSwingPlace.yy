@@ -28,7 +28,7 @@
   "origin":7,
   "parent":{
     "name":"Tamzi",
-    "path":"folders/Sprites/Tamzi.yy",
+    "path":"folders/Sprites/PlayerSprites/Tamzi.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
