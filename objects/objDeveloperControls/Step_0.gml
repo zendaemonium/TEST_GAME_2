@@ -17,7 +17,7 @@ if global.developerModeActive
 	}
 	if keyboard_check_pressed(ord("P")) 
 	{
-		if room != room_first 
+		if room != Room1
 		{
 			room_goto_previous();
 		}
