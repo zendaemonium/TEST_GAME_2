@@ -34,7 +34,7 @@ function __scribble_class_page() constructor
     __max_y  = 0;
     
     __vertex_buffer_array = [];
-    if (!__SCRIBBLE_ON_WEB) __texture_to_vertex_buffer_dict = {}; //FIXME - Workaround for pointers not being stringified properly on HTML5
+    if (!__SCRIBBLE_ON_WEB) __texture_to_vertex_buffer_dict = {}; //Workaround for pointers not being stringified properly on HTML5
     
     __char_events  = {};
     __line_events  = {};
@@ -140,7 +140,7 @@ function __scribble_class_page() constructor
     
     static __get_glyph_data = function(_index)
     {
-        //TODO - Static struct return needed here?
+        //DO THIS - Static struct return needed here?
         
         if (_index < 0)
         {
@@ -181,14 +181,14 @@ function __scribble_class_page() constructor
     
     static __get_vertex_buffer = function(_material)
     {
-        //TODO - Replace struct-based look-up with a ds_map
+        //DO THIS - Replace struct-based look-up with a ds_map
         var _data = __texture_to_vertex_buffer_dict[$ _material.__key];
         if (_data != undefined)
         {
             return _data.__vertex_buffer;
         }
         
-        //TODO - Move this to `__scribble_system()`
+        //DO THIS - Move this to `__scribble_system()`
         static _vertex_format = undefined;
         if (_vertex_format == undefined)
         {
@@ -201,14 +201,14 @@ function __scribble_class_page() constructor
             _vertex_format = vertex_format_end();                             //44 bytes per vertex, 132 bytes per tri, 264 bytes per glyph
         }
         
-        var _vbuff = vertex_create_buffer(); //TODO - Can we preallocate this? i.e. copy "for text" system we had in the old version
+        var _vbuff = vertex_create_buffer(); //DO THIS - Can we preallocate this? i.e. copy "for text" system we had in the old version
         vertex_begin(_vbuff, _vertex_format);
         
         if (__SCRIBBLE_VERBOSE_GC) __scribble_trace("Adding vertex buffer ", _vbuff, " to tracking");
         array_push(__gc_vbuff_refs, weak_ref_create(self));
         array_push(__gc_vbuff_ids, _vbuff);
         
-        //TODO - Convert this data into just a material reference
+        //DO THIS - Convert this data into just a material reference
         
         var _data = {
             __vertex_buffer: _vbuff,

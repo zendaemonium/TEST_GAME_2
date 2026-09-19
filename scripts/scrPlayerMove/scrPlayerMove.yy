@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrPlayerMove",
   "parent":{
-    "name":"TEST_GAME_2",
-    "path":"TEST_GAME_2.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

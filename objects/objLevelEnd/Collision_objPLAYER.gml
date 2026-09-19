@@ -1,1 +1,1 @@
-other.state=Player_State.STATELEAVE
+other.state=PlayerState.STATELEAVE;

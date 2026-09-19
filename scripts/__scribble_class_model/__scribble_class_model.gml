@@ -170,7 +170,7 @@ function __scribble_class_model(_element, _model_cache_name) constructor
     /// @param endCharacter
     static __get_bbox_revealed = function(_page, _in_start, _in_end, _padding_l, _padding_t, _padding_r, _padding_b)
     {
-        //TODO - Optimize by returning page bounds if the number of characters revealed is the same as the whole page
+        //DO THIS - Optimize by returning page bounds if the number of characters revealed is the same as the whole page
         
         if (not __allow_glyph_data_getter) __scribble_error("Getting the revealed glyph bounding box requires either:\n- Call `.allow_glyph_data_getter()` on the element\n- Set `SCRIBBLE_FORCE_GLYPH_DATA_GETTER` to `true`");
         

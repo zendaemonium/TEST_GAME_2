@@ -2,11 +2,11 @@ hp=1;
 
 alive=true;
 
-aggro=false
+aggro=false;
 
 xsp=0;
 ysp=0;
 
-dir=1
+dir=1;
 
-playerdirection = -1
+playerDirection = -1;

@@ -1,21 +1,27 @@
-event_inherited()
-ysp+=0.1 //gravity
+event_inherited(); //use parent step event
 
-if !aggro{
-	if distance_to_object(objPLAYER) < 400{
-		aggro = true
+ysp+=0.1; //gravity
+
+if !aggro
+{
+	if distance_to_object(objPLAYER) < 400
+	{
+		aggro = true;
 	}
 }
 
 //walking behavior
-if aggro{
-	xsp = playerdirection * 2.5
-}
-
-if place_meeting(x, y+1, objSOLID) //check if on ground, set ysp to 0
+if aggro
 {
-	ysp=0
+	xsp = playerDirection * 2.5;
 }
 
-image_xscale = playerdirection
-move_and_collide(xsp, ysp, objSOLID)
+if place_meeting(x, y+1, objSolid) //check if on ground, set ysp to 0
+{
+	ysp=0;
+}
+
+image_xscale = playerDirection;
+
+//FIXME: Enemy movement code is janky. Can get stuck in wall
+move_and_collide(xsp, ysp, objSolid);

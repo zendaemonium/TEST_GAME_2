@@ -1,13 +1,10 @@
 mask_index = defaultMask;
 
-
-ysp+=grav; //gravity
-
+var _onGround = false;
 switch(state){
-	case Player_State.STATEFREE:
+	case PlayerState.STATEFREE:
 	
-	xsp=0
-	
+		xsp=0;
 		if keyboard_check(vk_left) //player controls
 		{
 			xsp=-maxspeed;
@@ -17,98 +14,87 @@ switch(state){
 		{
 			xsp=+maxspeed;
 		}
-
-		if place_meeting(x, y+1, objSOLID) //check if on ground, set ysp to 0
+		
+		//move player and store if they are on the ground
+		_onGround = scrPlayerMove(xsp, ysp, objSolid);
+		
+		//if on the ground, player can jump
+		if _onGround and keyboard_check(vk_up)
 		{
-			ysp=0
-			if keyboard_check(vk_up)
-			{
-				ysp=jumpspeed;
-			}
+			ysp=jumpspeed;
 		}
 		
+		
 		//animation
-		if abs(xsp)>0{
+		//TODO: set sprites to be used for free movement
+		if abs(xsp)>0
+		{
 		//sprite_index = sprTamziPlaceWalk
 		//sprite needs to be changed based on character
 		}
-		else if xsp==0{
+		else if xsp==0
+		{
 		//sprite_index = sprTamziPlaceIdle
 		//sprite needs to be changed based on character
 		}
 
-//move player
-		scrPlayerMove(xsp, ysp, objSOLID)
-	
 	break;
 	
-	case Player_State.STATEHURT:
 	
-		stunDuration-=1
+	case PlayerState.STATEHURT:
 		
-		if stunDuration==0{
-			
-			stateTransition(Player_State.STATEFREE)
-			
-		}
+		//move player and store if they are on the ground
+		_onGround = scrPlayerMove(xsp, ysp, objSolid);
 		
-		scrPlayerMove(xsp, ysp, objSOLID)
-		if place_meeting(x, y+1, objSOLID)
+		if _onGround 
 		{
-			ysp=0
-			xsp=0
+			xsp = 0;
 		}
 		
+		stunDuration-=1;
+		if stunDuration==0
+		{
+			stateTransition(PlayerState.STATEFREE);
+		}
 	break;
 	
-	case Player_State.STATELEAVE:
 	
-		var _direction = sign(objLevelEndPathfindLocation.x - x)
-		xsp = _direction * maxspeed
-		
-		scrPlayerMove(xsp, ysp, objSOLID)
+	case PlayerState.STATELEAVE:
 	
-		if place_meeting(x, y+1, objSOLID)
-		{
-			ysp=0
-		}
+		var _direction = sign(objLevelEndPathfindLocation.x - x);
+		xsp = _direction * maxspeed;
 		
+		scrPlayerMove(xsp, ysp, objSolid);
+	
 		if distance_to_object(objLevelEndPathfindLocation) < 20
 		{
-			room_goto_next()
+			room_goto_next();
 		}
-		
 		
 	break;
 	
-	case Player_State.STATESELECT:
-		
-		xsp=0
-		
-		scrPlayerMove(xsp, ysp, objSOLID)
 	
-		if place_meeting(x, y+1, objSOLID)
-		{
-			ysp=0
-		}
+	case PlayerState.STATESELECT:
 		
-		
+		xsp=0;
+		scrPlayerMove(xsp, ysp, objSolid);
+
 	break;
 }
 
 if xsp != 0 {
-	dir=sign(xsp)
-	image_xscale = dir
+	dir=sign(xsp);
+	image_xscale = dir;
 }
 
 //when falling off of reality
 if bbox_top > room_height {
-	//wait a second here
-	x = currentGrace.x
-	y = currentGrace.bbox_bottom
-	ysp=0
-	ysp=0
-	global.health-=1
+	//TODO: wait a second here
+	x = currentGrace.x;
+	y = currentGrace.bbox_bottom;
+	ysp=0;
+	ysp=0;
+	global.health-=1;
 }
 	
 	

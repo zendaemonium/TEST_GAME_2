@@ -237,7 +237,7 @@ function __scribble_gen_2_parser()
     
     #region Determine the overall bidi direction for the string
     
-    //TODO - Is it faster to scan for the overall bidi post-hoc?
+    //DO THIS - Is it faster to scan for the overall bidi post-hoc?
     
     var _overall_bidi = _generator_state.__overall_bidi;
     if ((_overall_bidi != __SCRIBBLE_BIDI.L2R) && (_overall_bidi != __SCRIBBLE_BIDI.R2L))
@@ -896,7 +896,7 @@ function __scribble_gen_2_parser()
                             _glyph_grid[# _glyph_count, __SCRIBBLE_GEN_GLYPH.__LEFT_OFFSET  ] = 0;
                             _glyph_grid[# _glyph_count, __SCRIBBLE_GEN_GLYPH.__SCALE        ] = 1;
                         
-                            //TODO - Add a way to force a regeneration of every text element that contains a given surface
+                            //DO THIS - Add a way to force a regeneration of every text element that contains a given surface
                             _glyph_grid[# _glyph_count, __SCRIBBLE_GEN_GLYPH.__MATERIAL     ] = __scribble_surface_get_material(_surface);
                             _glyph_grid[# _glyph_count, __SCRIBBLE_GEN_GLYPH.__QUAD_U0      ] = 0;
                             _glyph_grid[# _glyph_count, __SCRIBBLE_GEN_GLYPH.__QUAD_V0      ] = 0;
@@ -1031,7 +1031,7 @@ function __scribble_gen_2_parser()
                             _glyph_prev = __SCRIBBLE_GLYPH_TEXTURE;
                         break;
                         
-                        default: //TODO - Optimize
+                        default: //DO THIS - Optimize
                             if (ds_map_exists(_effects_map, _tag_command_name)) //Set an effect
                             {
                                 _state_effect_flags = _state_effect_flags | (1 << _effects_map[? _tag_command_name]);
@@ -1758,7 +1758,7 @@ function __scribble_gen_2_parser()
                             __has_hebrew = true;
                         }
                         
-                        //TODO - Ligature transform here
+                        //DO THIS - Ligature transform here
                         
                         __SCRIBBLE_PARSER_WRITE_GLYPH
                     }

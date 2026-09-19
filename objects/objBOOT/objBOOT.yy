@@ -9,8 +9,8 @@
   "name":"objBOOT",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Boot and Persistents",
+    "path":"folders/Objects/Boot and Persistents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

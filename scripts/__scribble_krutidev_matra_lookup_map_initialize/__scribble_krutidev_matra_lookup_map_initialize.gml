@@ -2,7 +2,7 @@
 
 function __scribble_krutidev_matra_lookup_map_initialize()
 {
-    //TODO - Convert these to hex and add comments
+    //DO THIS - Convert these to hex and add comments
     var _map = ds_map_create();
     _map[?   58] = true;
     _map[? 2305] = true;

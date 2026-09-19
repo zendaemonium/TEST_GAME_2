@@ -4,7 +4,7 @@
 /// tallest glyph.
 /// 
 /// N.B. This function will **not** adjust the line height or glyphs positions. Please use
-///      `scribble_glyph_set()` to do that.
+///      `scribble_glyph_set()` for that.
 /// 
 /// Returns: N/A (undefined)
 /// @param fontName  The target font, as a string

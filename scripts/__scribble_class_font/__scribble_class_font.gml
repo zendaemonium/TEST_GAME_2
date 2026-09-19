@@ -12,7 +12,7 @@ function __scribble_class_font(_name, _glyph_count, _render_type, _from_bundle, 
     __name = _name;
     
     //One of the `__SCRIBBLE_RENDER_*` macros. Largely used to determine which shader path to use
-    __render_type = _render_type; //FIXME: Why is this camelCase, Juju?
+    __render_type = _render_type; //FIX THIS: Why is this camelCase, Juju?
     
     //Whether the source texture data exists in the asset bundle. If set to `false`, the source
     //texture data was added at runtime (probably with `sprite_add()`). This value can be `undefined`
@@ -97,7 +97,7 @@ function __scribble_class_font(_name, _glyph_count, _render_type, _from_bundle, 
         var _glyph_data_grid = __glyph_data_grid;
         var _glyph_count = ds_grid_width(_glyph_data_grid);
         
-        //TODO - Use some kind of cool optimization if the font is a standard font and every glyph has the same material
+        //DO THIS - Use some kind of cool optimization if the font is a standard font and every glyph has the same material
         
         var _i = 0;
         repeat(_glyph_count)
@@ -127,7 +127,7 @@ function __scribble_class_font(_name, _glyph_count, _render_type, _from_bundle, 
             return;
         }
         
-        //TODO - Use some kind of cool optimization if the font is a standard font and every glyph has the same material
+        //DO THIS - Use some kind of cool optimization if the font is a standard font and every glyph has the same material
         
         var _all_ready = true;
         var _i = 0;

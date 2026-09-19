@@ -11,8 +11,8 @@
   "name":"objHitboxCrook",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player and Player Hitboxes",
+    "path":"folders/Objects/Player and Player Hitboxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

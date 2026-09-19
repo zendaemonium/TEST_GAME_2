@@ -551,18 +551,18 @@ function __scribble_class_typist(_per_line) constructor
                 break;
                 
                 //Native audio playback feature
-                case __SCRIBBLE_AUDIO_COMMAND_TAG: //TODO - Add warning when adding a conflicting custom event
+                case __SCRIBBLE_AUDIO_COMMAND_TAG: //DO THIS - Add warning when adding a conflicting custom event
                     if (array_length(_event_data) >= 1)
                     {
                         __scribble_play_sound(_event_data[0], __sound_tag_gain, 1);
                     }
                 break;
                 
-                case __SCRIBBLE_TYPIST_SOUND_COMMAND_TAG: //TODO - Add warning when adding a conflicting custom event
+                case __SCRIBBLE_TYPIST_SOUND_COMMAND_TAG: //DO THIS - Add warning when adding a conflicting custom event
                     sound(__scribble_parse_sound_array_string(_event_data[1]), real(_event_data[2]), real(_event_data[3]), real(_event_data[4]));
                 break;
                 
-                case __SCRIBBLE_TYPIST_SOUND_PER_CHAR_COMMAND_TAG: //TODO - Add warning when adding a conflicting custom event
+                case __SCRIBBLE_TYPIST_SOUND_PER_CHAR_COMMAND_TAG: //DO THIS - Add warning when adding a conflicting custom event
                     switch(array_length(_event_data))
                     {
                         case 4: sound_per_char(__scribble_parse_sound_array_string(_event_data[1]), real(_event_data[2]), real(_event_data[3])); break;

@@ -4,8 +4,8 @@ function __scribble_krutidev_lookup_map_initialize()
 {
     var _lookup_map = ds_map_create();
     
-    //TODO - Precalculate the lookup table
-    //TODO - Move this to __scribble_glyph_data_initialize()
+    //DO THIS - Precalculate the lookup table
+    //DO THIS - Move this to __scribble_glyph_data_initialize()
     var _unicode_source_array = [
         "‘",   "’",   "“",   "”",   "(",    ")",   "{",    "}",   "=", "।",  "?",  "-",  "µ", "॰", ",", ".",
         "०",  "१",  "२",  "३",     "४",   "५",  "६",   "७",   "८",   "९", "x", 

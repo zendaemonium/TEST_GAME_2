@@ -11,7 +11,7 @@ function __scribble_gen_1_model_limits_and_bezier_curves()
     var _model_max_height = _element.__wrap_max_height - (_element.__padding_t + _element.__padding_b);
     if (_model_max_height < 0) _model_max_height = infinity;
     
-    //TODO - Cache Bezier curves
+    //DO THIS - Cache Bezier curves
     
     //Make a copy of the Bezier array
     var _element_bezier_array = _element.__bezier_array;

@@ -6,8 +6,8 @@
   "name":"objGrace",
   "overriddenProperties":[],
   "parent":{
-    "name":"TEST_GAME_2",
-    "path":"TEST_GAME_2.yyp",
+    "name":"Zones, Triggers, Checkpoints",
+    "path":"folders/Objects/Zones, Triggers, Checkpoints.yy",
   },
   "parentObjectId":null,
   "persistent":false,

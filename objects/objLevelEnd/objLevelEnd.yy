@@ -9,8 +9,8 @@
   "name":"objLevelEnd",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Zones, Triggers, Checkpoints",
+    "path":"folders/Objects/Zones, Triggers, Checkpoints.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,9 +1,10 @@
-if state!=(Player_State.STATEHURT){
-	stateTransition(Player_State.STATEHURT)
+if state!=(PlayerState.STATEHURT){
+	stateTransition(PlayerState.STATEHURT);
 	
 	var _enemyDirection = sign(other.x-x);
-	xsp=-4*_enemyDirection
-	ysp=-2.5
-	global.health-=1
+	xsp=-5*_enemyDirection
+	ysp=-4;
+	
+	global.health-=1;
 
-	}
+}

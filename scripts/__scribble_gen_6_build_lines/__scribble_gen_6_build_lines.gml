@@ -7,7 +7,7 @@
                                   _line_grid[# _line_count, __SCRIBBLE_GEN_LINE.__FORCED_BREAK      ] = _forced_break;\
                                   _forced_break = false;\ //Reset this value since we presume line wrapping
                                   ;\ //Adjust the first word's width to account for visual tweaks
-                                  ;\ //TODO - Implement for R2L text
+                                  ;\ //DO THIS - Implement for R2L text
                                   if ((SCRIBBLE_NEWLINES_PAD_LEFT_SPACE || SCRIBBLE_NEWLINES_TRIM_LEFT_SPACE) && (_word_grid[# _line_word_start, __SCRIBBLE_GEN_WORD.__BIDI] < __SCRIBBLE_BIDI.R2L))\
                                   {\
                                       var _word_glyph_start = _word_grid[#  _line_word_start,  __SCRIBBLE_GEN_WORD.__GLYPH_START ];\
@@ -175,7 +175,7 @@ function __scribble_gen_6_build_lines()
                         
                         if (_word_grid[# _i, __SCRIBBLE_GEN_WORD.__BIDI] >= __SCRIBBLE_BIDI.R2L)
                         {
-                            //TODO - Implement R2L emergency per-glyph line wrapping
+                            //DO THIS - Implement R2L emergency per-glyph line wrapping
                             var _line_word_end = _i;
                             __SCRIBBLE_GEN_LINE_END;
                             _line_word_start = _i+1;
@@ -247,7 +247,7 @@ function __scribble_gen_6_build_lines()
                                     ++_i; //We've added a new word!
                                     ++_word_count;
                                     
-                                    //TODO - We can early out here if the last glyph in the word fits onto a line
+                                    //DO THIS - We can early out here if the last glyph in the word fits onto a line
                                 }
                                 
                                 _word_x += _glyph_width;
@@ -378,7 +378,7 @@ function __scribble_gen_6_build_lines()
     _line_grid[# _line_count-1, __SCRIBBLE_GEN_LINE.__DISABLE_JUSTIFY] = true;
     
     //Align the left-hand side of the word to the left-hand side of the line. This corrects visually unpleasant gaps and overlaps
-    //TODO - Implement for R2L text
+    //DO THIS - Implement for R2L text
     if (SCRIBBLE_NEWLINES_PAD_LEFT_SPACE || SCRIBBLE_NEWLINES_TRIM_LEFT_SPACE)
     {
         var _line = 0;

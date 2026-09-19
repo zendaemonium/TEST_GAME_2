@@ -14,7 +14,7 @@ function __scribble_gen_8_position_glyphs()
         var _glyph_count     = __glyph_count;
     }
     
-    ds_grid_clear(_temp_grid, 0); //FIXME - Works around a bug in ds_grid_add_grid_region() (runtime 2.3.7.474  2021-12-03)
+    ds_grid_clear(_temp_grid, 0); //FIX THIS - Works around a bug in ds_grid_add_grid_region() (runtime 2.3.7.474  2021-12-03)
     
     //Transform the animation index into a proper packed index
     ds_grid_multiply_region(_glyph_grid, 0, __SCRIBBLE_GEN_GLYPH.__ANIMATION_INDEX, _glyph_count-1, __SCRIBBLE_GEN_GLYPH.__ANIMATION_INDEX, __SCRIBBLE_MAX_LINES);

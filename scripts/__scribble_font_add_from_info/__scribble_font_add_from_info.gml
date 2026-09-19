@@ -199,7 +199,7 @@ function __scribble_font_add_from_info(_name, _texture_group, _texture_uvs, _fon
             
             var _char = chr(_unicode);
             
-            //FIXME - Workaround for HTML5 in GMS2.3.7.606 and above
+            //FIX THIS - Workaround for HTML5 in GMS2.3.7.606 and above
             //        This doesn't seem to be needed in 2022.3.0.497
             var _x = _glyph_dict[$ "x"];
             var _y = _glyph_dict[$ "y"];

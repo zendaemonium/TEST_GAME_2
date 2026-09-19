@@ -1,36 +1,38 @@
 if place_meeting(x, y, objPLAYER) and not selecting
 {
-	if keyboard_check_pressed(ord("X"))
+	if keyboard_check_pressed(ord("X")) //start selecting 
 	{
 		selecting =  true
-		objPLAYER.state = Player_State.STATESELECT
+		objPLAYER.state = PlayerState.STATESELECT
 	}
 }
 else if selecting == true
 {
-	if keyboard_check_pressed(vk_right)
+	if keyboard_check_pressed(vk_right) //selection +1
 	{
-		selectindex = selectindex+1
-		if selectindex == 4
+		selectIndex = selectIndex+1;
+		if selectIndex == 4 //loop around to minimum index
 		{
-			selectindex = 0
+			selectIndex = 0;
 		}
 	}
-	if keyboard_check_pressed(vk_left)
+	if keyboard_check_pressed(vk_left) //selection -1
 	{
-		selectindex = selectindex-1
-		if selectindex == -1
+		selectIndex = selectIndex-1;
+		if selectIndex == -1 //loop around to max index
 		{
-			selectindex = 3
+			selectIndex = 3;
 		}
 	}
-	if keyboard_check_pressed(ord("X")){
-			selecting =  false
-			objPLAYER.state = Player_State.STATEFREE
-			global.characterindex = selectindex
-			global.health = global.maxhealth
+	if keyboard_check_pressed(ord("X")) //finish selecting
+	{
+			//SWITCHING CHARACTER
+			selecting =  false;
+			objPLAYER.state = PlayerState.STATEFREE;
+			global.characterIndex = selectIndex;
+			global.health = global.maxHealth;
 			with objPLAYER {
-				characterTransition()
+				characterTransition();
 			}
 	}
 }

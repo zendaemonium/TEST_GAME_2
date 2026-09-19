@@ -1,6 +1,6 @@
 var _color = c_white
 
-if state == Player_State.STATEHURT{
+if state == PlayerState.STATEHURT{
 	_color = c_red
 }
 

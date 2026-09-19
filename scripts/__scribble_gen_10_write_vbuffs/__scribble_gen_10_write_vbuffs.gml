@@ -25,7 +25,7 @@
                                          var _quad_cx = _quad_l + _half_w;\
                                          var _quad_cy = _quad_t + _half_h;\
                                          if (_quad_cy > _bezier_prev_cy)\ //If we've snapped back to the LHS then reset our Bezier curve 
-                                         {\ //TODO - Maybe use a line number check instead? This could get slow
+                                         {\ //DO THIS - Maybe use a line number check instead? This could get slow
                                              _bezier_search_index = 0;\
                                              _bezier_search_d0 = 0;\
                                              _bezier_search_d1 = _bezier_lengths[1];\
@@ -378,7 +378,7 @@ function __scribble_gen_10_write_vbuffs()
                     }
                     else
                     {
-                        //FIXME - sprite_get_uvs() occasionally gives us nonsense for the 7-index result in runtime 2022.3.0.497
+                        //FIX THIS - sprite_get_uvs() occasionally gives us nonsense for the 7-index result in runtime 2022.3.0.497
                         static _html5_sprite_height_workaround_dict = {};
                         
                         var _crop_height = _html5_sprite_height_workaround_dict[$ string(_sprite_index) + ":" + string(_j)];

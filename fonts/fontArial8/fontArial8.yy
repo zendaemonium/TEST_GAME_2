@@ -191,8 +191,8 @@
   "maintainGms1Font":false,
   "name":"fontArial8",
   "parent":{
-    "name":"TEST_GAME_2",
-    "path":"TEST_GAME_2.yyp",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -11,8 +11,8 @@
   "name":"objHUD",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"HUD and GUI",
+    "path":"folders/Objects/HUD and GUI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

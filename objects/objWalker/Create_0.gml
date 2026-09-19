@@ -1,1 +1,1 @@
-event_inherited()
+event_inherited(); //use parent create event

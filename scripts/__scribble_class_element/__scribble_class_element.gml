@@ -1319,7 +1319,7 @@ function __scribble_class_element(_string, _unique_id) constructor
         return self;
     }
     
-    //TODO - DEPRECATED, remove in v10
+    //DO THIS - DEPRECATED, remove in v10
     static sdf_border = function(_colour, _thickness)
     {
         __sdf_outline_colour    = _colour;
@@ -1603,7 +1603,7 @@ function __scribble_class_element(_string, _unique_id) constructor
     
     static debug_draw_bbox = function(_x, _y)
     {
-        //FIXME - Reimplement properly
+        
         
         var _oldColour = draw_get_colour();
         draw_set_colour(c_red);
@@ -1752,7 +1752,7 @@ function __scribble_class_element(_string, _unique_id) constructor
         
         shader_set_uniform_f(_u_fTime, __animation_time);
         
-        //TODO - Optimise
+        //DO THIS - Optimise
         shader_set_uniform_f(_u_vColourBlend, colour_get_red(  __blend_colour)/255,
                                               colour_get_green(__blend_colour)/255,
                                               colour_get_blue( __blend_colour)/255,

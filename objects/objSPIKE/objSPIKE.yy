@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objSPIKE",
+  "%Name":"objSpike",
   "eventList":[],
   "managed":true,
-  "name":"objSPIKE",
+  "name":"objSpike",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Terrain",
+    "path":"folders/Objects/Terrain.yy",
   },
   "parentObjectId":null,
   "persistent":false,

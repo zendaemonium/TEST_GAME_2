@@ -11,7 +11,7 @@ function __scribble_gen_5_finalize_bidi()
         var _overall_bidi = __overall_bidi;
     }
     
-    //TODO - Optimise this by storing where symbolic bidi words are
+    //DO THIS - Optimise this by storing where symbolic bidi words are
     //       This saves iterating over the whole text element
     
     // Iterate over all words, assigning directionality to neutral words
@@ -30,7 +30,7 @@ function __scribble_gen_5_finalize_bidi()
             if (_prev_bidi <= __SCRIBBLE_BIDI.SYMBOL) _prev_bidi = _next_bidi; //symbol or whitespace
             if (_next_bidi <= __SCRIBBLE_BIDI.SYMBOL) _next_bidi = _prev_bidi; //symbol or whitespace
             
-            //TODO - Handle this recursively
+            //DO THIS - Handle this recursively
             
             // Prefer the overall direction if either adjacent word shares it
             var _new_bidi = ((_prev_bidi == _overall_bidi) || (_next_bidi == _overall_bidi))? _overall_bidi : _prev_bidi;
