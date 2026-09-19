@@ -27,7 +27,8 @@ else if selecting == true
 	if keyboard_check_pressed(ord("X")){
 			selecting =  false
 			objPLAYER.state = Player_State.STATEFREE
-			objPLAYER.characterindex = selectindex
+			global.characterindex = selectindex
+			global.health = global.maxhealth
 			with objPLAYER {
 				characterTransition()
 			}

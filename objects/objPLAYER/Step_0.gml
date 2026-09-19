@@ -38,7 +38,7 @@ switch(state){
 		}
 
 //move player
-		move_and_collide(xsp, ysp, objSOLID)
+		scrPlayerMove(xsp, ysp, objSOLID)
 	
 	break;
 	
@@ -52,7 +52,7 @@ switch(state){
 			
 		}
 		
-		move_and_collide(xsp, ysp, objSOLID)
+		scrPlayerMove(xsp, ysp, objSOLID)
 		if place_meeting(x, y+1, objSOLID)
 		{
 			ysp=0
@@ -66,7 +66,7 @@ switch(state){
 		var _direction = sign(objLevelEndPathfindLocation.x - x)
 		xsp = _direction * maxspeed
 		
-		move_and_collide(xsp, ysp, objSOLID)
+		scrPlayerMove(xsp, ysp, objSOLID)
 	
 		if place_meeting(x, y+1, objSOLID)
 		{
@@ -85,7 +85,7 @@ switch(state){
 		
 		xsp=0
 		
-		move_and_collide(xsp, ysp, objSOLID)
+		scrPlayerMove(xsp, ysp, objSOLID)
 	
 		if place_meeting(x, y+1, objSOLID)
 		{
@@ -101,12 +101,14 @@ if xsp != 0 {
 	image_xscale = dir
 }
 
+//when falling off of reality
 if bbox_top > room_height {
 	//wait a second here
 	x = currentGrace.x
 	y = currentGrace.bbox_bottom
 	ysp=0
 	ysp=0
+	global.health-=1
 }
 	
 	
