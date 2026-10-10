@@ -31,7 +31,8 @@ else if selecting == true
 			objPLAYER.state = PlayerState.STATEFREE;
 			global.characterIndex = selectIndex;
 			global.health = global.maxHealth;
-			with objPLAYER {
+			with objPLAYER
+			{
 				characterTransition();
 			}
 	}

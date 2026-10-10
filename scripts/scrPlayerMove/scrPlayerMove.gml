@@ -65,7 +65,6 @@ function scrPlayerMove(_xsp = 0, _ysp = 0, _collidables)
 	        //then snap to ground
 	        if place_meeting(x,y+i,_collidables)
 			{
-	            _yCollisionFlag = true;
 				_onGroundFlag = true;
 	            _ysp = (floor(y+i)-y); //go back one pixel, then round up to snap to floor
 	            i = _ysp+1; //break the loop
@@ -99,5 +98,9 @@ function scrPlayerMove(_xsp = 0, _ysp = 0, _collidables)
 		ysp += grav;
 	}
 	
+	if _yCollisionFlag == true
+	{
+		ysp=0
+	}
     return _onGroundFlag;
 }

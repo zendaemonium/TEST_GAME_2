@@ -15,7 +15,7 @@ if global.developerModeActive
 	
 	//draw controls
 	draw_set_halign(fa_right);
-	draw_text(_guiWidth - 20, _guiHeight -240, "DEV CONTROLS \n V - Toggle Dev Mode \n N - Go to next room \n P - Go to previous room \n D - die :(")
+	draw_text(_guiWidth - 20, _guiHeight -350, "DEV CONTROLS \n ] - Next Horseman \n [ - Previous Horseman \n ' - Giveth \n ; - Taketh away \n V - Toggle Dev Mode \n > - Go to next room \n < - Go to previous room")
 	
 	
 //draw various variables that may be useful for debugging ==========================

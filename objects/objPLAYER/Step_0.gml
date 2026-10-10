@@ -16,7 +16,7 @@ switch(state){
 		}
 		
 		//move player and store if they are on the ground
-		_onGround = scrPlayerMove(xsp, ysp, objSolid);
+		_onGround = scrPlayerMove(xsp, ysp, collidables);
 		
 		//if on the ground, player can jump
 		if _onGround and keyboard_check(vk_up)
@@ -44,7 +44,7 @@ switch(state){
 	case PlayerState.STATEHURT:
 		
 		//move player and store if they are on the ground
-		_onGround = scrPlayerMove(xsp, ysp, objSolid);
+		_onGround = scrPlayerMove(xsp, ysp, collidables);
 		
 		if _onGround 
 		{
@@ -64,7 +64,7 @@ switch(state){
 		var _direction = sign(objLevelEndPathfindLocation.x - x);
 		xsp = _direction * maxspeed;
 		
-		scrPlayerMove(xsp, ysp, objSolid);
+		scrPlayerMove(xsp, ysp, collidables);
 	
 		if distance_to_object(objLevelEndPathfindLocation) < 20
 		{
@@ -77,7 +77,7 @@ switch(state){
 	case PlayerState.STATESELECT:
 		
 		xsp=0;
-		scrPlayerMove(xsp, ysp, objSolid);
+		scrPlayerMove(xsp, ysp, collidables);
 
 	break;
 }

@@ -29,7 +29,8 @@ enum PlayerState
 state=PlayerState.STATEFREE;
 instance_create_layer(0, 0,layer, objHitboxCrook);
 
-
+collisionMapID = layer_tilemap_get_id(layer_get_id("Terrain"))
+collidables = [objSolid, collisionMapID]
 
 /// @function		stateTransition(_stateTo)
 /// @description	this function is used to transition to a new state :D
@@ -54,27 +55,6 @@ function stateTransition(_stateTo)
 	//switch state variable to new state
 	state=_stateTo;
 	return	1;
-}
-
-/// @function		characterTransition()
-/// @description	change player variables to fit global.characterIndex
-function characterTransition(){
-	if global.characterIndex = 0 
-	{
-		sprite_index = sprTamziPlaceIdle;
-	}
-	else if global.characterIndex = 1 
-	{
-		sprite_index = sprSekhetPlace;
-	}
-	else if global.characterIndex = 2 
-	{
-		sprite_index = sprDayanPlace;
-	}
-	else if global.characterIndex = 3 
-	{
-		sprite_index = sprMallaidhPlace;
-	}
 }
 
 characterTransition(); //transition to correct character upon spawn
