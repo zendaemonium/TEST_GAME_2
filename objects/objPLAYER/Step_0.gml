@@ -24,6 +24,19 @@ switch(state){
 			ysp=jumpspeed;
 		}
 		
+		if keyboard_check_pressed(ord("Z")) // attack!
+		{
+			with (objHitboxMelee)
+			{
+				active = true;
+				activeFrames = ATTACKDURATION;
+			}
+		}
+		
+		if keyboard_check_pressed(ord("C")) // special!
+		{
+			scrPlayerSpecial();
+		}
 		
 		//animation
 		//TODO: set sprites to be used for free movement

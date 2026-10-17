@@ -22,12 +22,6 @@ else if global.characterIndex == 3 //mallaidh hitbox
 	x = objPLAYER.x+(objPLAYER.dir*50);
 	y = objPLAYER.y-(30);
 }
-
-if keyboard_check_pressed(ord("Z"))
-{
-	active = true;
-	activeFrames = ATTACKDURATION;
-}
 		
 if active 
 {

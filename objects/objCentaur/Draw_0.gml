@@ -1,4 +1,4 @@
-draw_self()
+event_inherited()
 
 var xTopHalf = x-50
 var yTopHalf = y-100

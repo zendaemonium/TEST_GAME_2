@@ -27,7 +27,7 @@ enum PlayerState
 }
 
 state=PlayerState.STATEFREE;
-instance_create_layer(0, 0,layer, objHitboxCrook);
+instance_create_layer(0, 0,layer, objHitboxMelee);
 
 collisionMapID = layer_tilemap_get_id(layer_get_id("Terrain"))
 collidables = [objSolid, collisionMapID]
