@@ -23,8 +23,11 @@ enum PlayerState
 	STATEDANCE,
 	STATELEAVE,
 	STATESELECT,
+	STATEAIM,
 
 }
+
+instance_create_layer(0,0,layer,objAimingReticle)
 
 state=PlayerState.STATEFREE;
 instance_create_layer(0, 0,layer, objHitboxMelee);

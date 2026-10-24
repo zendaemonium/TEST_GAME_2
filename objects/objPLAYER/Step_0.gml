@@ -93,6 +93,30 @@ switch(state){
 		scrPlayerMove(xsp, ysp, collidables);
 
 	break;
+	
+	case PlayerState.STATEAIM:
+		//movement TO DO; add physics to aiming player
+		xsp=lerp(xsp,0,0.1)
+		
+		//launch projectile
+		if keyboard_check_released(ord("C")){
+			var _projectileX = x
+			var _projectileY = objAimingReticle.yOffset + y;
+			var _speed = 15;
+			var _xSpeed = lengthdir_x(_speed, objAimingReticle.angle)
+			var _ySpeed = lengthdir_y(_speed, objAimingReticle.angle)
+			
+			with instance_create_layer(_projectileX, _projectileY,layer,objMallaidhBomb)
+			{
+				xsp = _xSpeed
+				ysp = _ySpeed
+				yacc = 0.3
+			}
+			stateTransition(PlayerState.STATEFREE);
+		}
+		
+	break;
+	
 }
 
 if xsp != 0 {
