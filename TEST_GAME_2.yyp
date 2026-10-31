@@ -254,6 +254,7 @@
     {"id":{"name":"sprMallaidhPlace","path":"sprites/sprMallaidhPlace/sprMallaidhPlace.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"sprRectangleBlue","path":"sprites/sprRectangleBlue/sprRectangleBlue.yy",},},
+    {"id":{"name":"sprRectangleDarkGray","path":"sprites/sprRectangleDarkGray/sprRectangleDarkGray.yy",},},
     {"id":{"name":"sprRectangleGray","path":"sprites/sprRectangleGray/sprRectangleGray.yy",},},
     {"id":{"name":"sprRectangleGreen","path":"sprites/sprRectangleGreen/sprRectangleGreen.yy",},},
     {"id":{"name":"sprRectanglePurple","path":"sprites/sprRectanglePurple/sprRectanglePurple.yy",},},
