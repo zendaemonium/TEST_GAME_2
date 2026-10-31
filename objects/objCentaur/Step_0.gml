@@ -20,7 +20,7 @@ if timer >0
 {
 	timer -=1
 }
-if timer <=0 and LineOfSight() == true
+if timer <=0 and lineOfSight(objPLAYER,xTopHalf, yTopHalf) == true
 {
 		//create an arrow
 		var _arrow = instance_create_layer(xTopHalf-20,yTopHalf-10,layer,objArrow);

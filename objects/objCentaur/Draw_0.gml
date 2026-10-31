@@ -5,7 +5,7 @@ yTopHalf = y-100
 
 if global.developerModeActive
 {
-	var _canSeePlayer = LineOfSight(objPLAYER);
+	var _canSeePlayer = lineOfSight(objPLAYER,xTopHalf, yTopHalf);
 	draw_text(x+200, y-100,"can see player = " + string(_canSeePlayer))
 }
 
