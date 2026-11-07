@@ -1,5 +1,5 @@
-hp=1;
-combatDamageTaken = 1;
+hp=100;
+damageTaken = 100;
 alive=true;
 
 aggro=false;
@@ -13,6 +13,9 @@ playerDirection = -1;
 
 immuneFrameMax = 30
 immuneFrames = 0
+
+poisonCooldownMaxFrames = 36
+poisonCooldownFrame = 0
 
 function lineOfSight(_target=objPLAYER, _viewX = x, _viewY = y)
 {

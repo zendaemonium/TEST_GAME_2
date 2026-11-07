@@ -3,7 +3,7 @@
 
 if immuneFrames == 0
 {
-	hp -=1
+	hp -= damageTaken
 	immuneFrames = immuneFrameMax
 	if hp <= 0 
 	{

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script132",
+  "%Name":"scrSetBounds",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script132",
+  "name":"scrSetBounds",
   "parent":{
-    "name":"TEST_GAME_2",
-    "path":"TEST_GAME_2.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

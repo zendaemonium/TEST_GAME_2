@@ -28,7 +28,7 @@ if timer <=0 and lineOfSight(objPLAYER,xTopHalf, yTopHalf) == true
 		var _speed = 20
 		var _arrowXspeed = lengthdir_x(_speed, playerAngle)
 		var _arrowYspeed = lengthdir_y(_speed, playerAngle)
-		// TO DO: ingluence angle based off of prediction for movement
+		// TO DO: influence angle based off of prediction for movement
 		
 		_arrow.xsp = _arrowXspeed
 		_arrow.ysp = _arrowYspeed
