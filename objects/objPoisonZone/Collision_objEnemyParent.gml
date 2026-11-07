@@ -1,4 +1,4 @@
-if other.poisonCooldownFrame <= 0
+if other.poisonCooldownFrame <= 0 and duration > 0
 {
 	other.poisonCooldownFrame = other.poisonCooldownMaxFrames
 	with other
