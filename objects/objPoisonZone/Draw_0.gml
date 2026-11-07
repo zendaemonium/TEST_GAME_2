@@ -5,7 +5,7 @@ if global.developerModeActive
 }
 
 
-for(var i=0; i < 5; i++)
+for(var i=0; i < array_length(cloudXPositions); i++)
 {
 	draw_sprite_ext(sprPoisonSmoke,cloudImageIndexes[i], cloudXPositions[i], cloudYPositions[i], 4, 4, 0, c_white, cloudImageAlphas[i])
 	
