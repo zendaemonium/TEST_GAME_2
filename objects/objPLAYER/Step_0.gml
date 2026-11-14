@@ -1,6 +1,5 @@
 mask_index = defaultMask;
 
-var _onGround = false;
 switch(state){
 	case PlayerState.STATEFREE:
 	
@@ -16,10 +15,10 @@ switch(state){
 		}
 		
 		//move player and store if they are on the ground
-		_onGround = scrPlayerMove(xsp, ysp, collidables);
+		onGround = scrPlayerMove(xsp, ysp, collidables);
 		
 		//if on the ground, player can jump
-		if _onGround and keyboard_check(vk_up)
+		if onGround and keyboard_check(vk_up)
 		{
 			ysp=jumpspeed;
 		}
@@ -57,9 +56,9 @@ switch(state){
 	case PlayerState.STATEHURT:
 		
 		//move player and store if they are on the ground
-		_onGround = scrPlayerMove(xsp, ysp, collidables);
+		onGround = scrPlayerMove(xsp, ysp, collidables);
 		
-		if _onGround 
+		if onGround 
 		{
 			xsp = 0;
 		}
@@ -115,6 +114,22 @@ switch(state){
 			stateTransition(PlayerState.STATEFREE);
 		}
 		
+	break;
+		
+	case PlayerState.STATETAMSLAM:
+		onGround = scrPlayerMove(0, 20, collidables)
+		if onGround
+		{
+			var _crookX = x + dir*40;
+			instance_create_layer(_crookX, y, layer, objTamziShockwave);
+			with instance_create_layer(_crookX, y, layer, objTamziShockwave)
+			{
+				dir = -1;
+				xsp = STARTSPEED * dir;
+				image_xscale = -1
+			}
+			stateTransition(PlayerState.STATEFREE);
+		}
 	break;
 	
 }

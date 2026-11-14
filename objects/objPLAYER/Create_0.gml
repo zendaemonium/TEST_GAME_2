@@ -1,4 +1,4 @@
-
+onGround=true
 xsp=0;
 ysp=0;
 inControl=true;
@@ -24,6 +24,7 @@ enum PlayerState
 	STATELEAVE,
 	STATESELECT,
 	STATEAIM,
+	STATETAMSLAM,
 
 }
 
